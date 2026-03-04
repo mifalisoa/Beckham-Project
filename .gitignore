@@ -1,0 +1,18 @@
+
+# Node modules
+node_modules
+
+# Build React
+dist
+build
+
+# autre dossiers
+config
+models
+seeders
+migrations
+
+# Configs locales
+.env
+.vscode
+.DS_Store

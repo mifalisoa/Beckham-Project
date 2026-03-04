@@ -1,0 +1,7 @@
+
+
+export enum INTERACTION_TYPE {
+    AIMER = "AIMER",
+    COMMENTER = "COMMENTER",
+    PARTAGER = "PARTAGER"
+}

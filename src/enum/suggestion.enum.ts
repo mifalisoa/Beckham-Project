@@ -1,0 +1,4 @@
+export enum SUGGESTION_STATUS {
+    EN_ATTENTE = 'EN_ATTENTE',
+    TRAITEE = 'TRAITEE'
+}
