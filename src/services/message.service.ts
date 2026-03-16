@@ -1,6 +1,6 @@
-import { IMessage } from "../types/Message.type";
-import { Message } from "../models/Message.model";
-import { User } from "../models/User.model";
+import { IMessage } from "../types";
+import { Message } from "../models";
+import { User } from "../models";
 
 export class MessageService {
     public async getMessages(): Promise<IMessage[]> {

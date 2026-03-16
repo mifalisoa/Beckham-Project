@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
-import { PublicationService } from "../services/publication.service";
-import { IPublication } from "../types/Publication.type";
+import { PublicationService } from "../services";
+import { IPublication } from "../types";
 
 
 export class PublicationController {

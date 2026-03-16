@@ -1,7 +1,7 @@
-import { IInteraction } from "../types/Interaction.type";
-import { Interaction } from "../models/Interaction.model";
-import { User } from "../models/User.model";
-import { Publication } from "../models/Publication.model";
+import { IInteraction } from "../types";
+import { Interaction } from "../models";
+import { User } from "../models";
+import { Publication } from "../models";
 
 export class InteractionService {
     async getAllInteractions(): Promise<IInteraction[]> {

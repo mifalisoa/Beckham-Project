@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
-import { InteractionService } from "../services/interaction.service";
-import { IInteraction } from "../types/Interaction.type";
+import { InteractionService } from "../services";
+import { IInteraction } from "../types";
 
 export class InteractionController {
     private interactionService: InteractionService;

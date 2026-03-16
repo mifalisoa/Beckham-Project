@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
-import { UserService } from "../services/user.service";
-import { IUser } from "../types/User.type";
+import { UserService } from "../services";
+import { IUser } from "../types";
 
 export class UserController {
     private userService: UserService;

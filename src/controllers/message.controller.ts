@@ -1,6 +1,5 @@
 import { Request, Response } from "express";
-import { MessageService } from "../services/message.service";
-import { IMessage } from "../types/Message.type";
+import { MessageService } from "../services";
 
 export class MessageController {
     private messageService: MessageService;

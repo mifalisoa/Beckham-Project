@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
-import { SuggestionService } from "../services/suggestion.service";
-import { ISuggestion } from "../types/Suggestion.type";
+import { SuggestionService } from "../services";
+import { ISuggestion } from "../types";
 
 export class SuggestionController {
     private suggestionService: SuggestionService;

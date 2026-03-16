@@ -1,12 +1,8 @@
 import dotenv from 'dotenv';
-import express, {Response, Request} from 'express';
+import express from 'express';
 import cors from 'cors';
 import { connectDatabase } from './database/database';
-import UserRoute from './router/user.route';
-import MessageRoute from './router/message.route';
-import SuggestionRoute from './router/suggestion.route';
-import PublicationRoute from './router/publication.route';
-import InteractionRoute from './router/interaction.route';
+import { mainRouter } from './router';
 
 dotenv.config();
 
@@ -27,16 +23,7 @@ app.use(cors({
 /**
  * ROUTES
  */
-app.use('/users', UserRoute);
-app.use('/messages', MessageRoute);
-app.use('/suggestions', SuggestionRoute);
-app.use('/publications', PublicationRoute);
-app.use('/interactions', InteractionRoute);
-
-
-app.get("/", (req: Request, res: Response) => {
-  res.send("🚀 Serveur TypeScript en marche !");
-});
+app.use('/', mainRouter)
 
 /**
  * LISTENER

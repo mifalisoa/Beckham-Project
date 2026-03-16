@@ -1,8 +1,8 @@
-import { Suggestion } from "../models/Suggestion.model";
-import { ISuggestion } from "../types/Suggestion.type";
-import { User } from "../models/User.model";
-import { SUGGESTION_STATUS } from "../enum/suggestion.enum";
-import { USER_ROLE } from "../enum/user.enum";
+import { Suggestion } from "../models";
+import { ISuggestion } from "../types";
+import { User } from "../models";
+import { SUGGESTION_STATUS } from "../enum";
+import { USER_ROLE } from "../enum";
 
 export class SuggestionService {
     public async getSuggestions(): Promise<Suggestion[]> {

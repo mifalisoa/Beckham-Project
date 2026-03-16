@@ -1,7 +1,7 @@
-import { IPublication } from "../types/Publication.type";
-import { Publication } from "../models/Publication.model";
-import { User } from "../models/User.model";
-import { Interaction } from "../models/Interaction.model";
+import { IPublication } from "../types";
+import { Publication } from "../models";
+import { User } from "../models";
+import { Interaction } from "../models";
 
 export class PublicationService {
     public async getAllPublications(): Promise<IPublication[]> {

@@ -1,5 +1,5 @@
-import { IUser } from "../types/User.type";
-import { User } from "../models/User.model";
+import { IUser } from "../types";
+import { User } from "../models";
 import bcrypt from "bcrypt";
 
 export class UserService {
